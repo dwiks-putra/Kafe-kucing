@@ -7,7 +7,7 @@ const DAFTAR_MENU = [
   { id: '3', nama: 'Croissant Ikan Tuna', harga: 18000 },
 ];
 
-// Child Component 1
+
 const OrderSummary = ({ totalCount }) => {
   return (
     <View style={styles.box}>
@@ -21,7 +21,7 @@ const OrderSummary = ({ totalCount }) => {
   );
 };
 
-// Child Component 2
+
 const MenuItem = ({ nama, harga, onTambahPesanan }) => {
   const [qty, setQty] = useState(0);
 
@@ -42,7 +42,7 @@ const MenuItem = ({ nama, harga, onTambahPesanan }) => {
   );
 };
 
-// Parent Component
+
 export default function App() {
   const [totalPesanan, setTotalPesanan] = useState(0);
 
